@@ -89,6 +89,8 @@ RUN ln -s /etc/php/7.4/xdebug.ini /usr/local/etc/php/conf.d/90-xdebug.ini
 
 WORKDIR /var/www
 
+EXPOSE 9000
+
 COPY start.sh /
 RUN chmod +x /start.sh
 CMD ["/start.sh", "php-fpm"]
