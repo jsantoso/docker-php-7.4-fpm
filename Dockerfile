@@ -87,7 +87,7 @@ RUN mkdir -p /usr/local/etc/php/conf.d
 RUN ln -s /etc/php/7.4/php.ini /usr/local/etc/php/conf.d/90-tris.ini
 RUN ln -s /etc/php/7.4/xdebug.ini /usr/local/etc/php/conf.d/90-xdebug.ini
 
-WORKDIR /var/www
+WORKDIR /var/www/html
 
 EXPOSE 9000
 
